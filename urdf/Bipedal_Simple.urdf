@@ -1,0 +1,465 @@
+<?xml version="1.0" ?>
+<robot name="Bipedal_Simple">
+
+<material name="plastic_blue">
+  <color rgba="0.200 0.200 0.800 1.000"/>
+</material>
+
+<material name="plastic_white">
+  <color rgba="1.000 1.000 1.000 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.19057464403158744 -0.0009583701627885866 0.30542796636118535" rpy="0 0 0"/>
+    <mass value="17.29072923315432"/>
+    <inertia ixx="0.06660476722317821" iyy="0.07641921056385614" izz="0.12214471787506387" ixy="-4.7383971746306486e-15" iyz="0.002564811648628181" ixz="1.3322676295501878e-15"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_white"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="hip_joint_left1">
+  <inertial>
+    <origin xyz="0.0014254099054722413 -0.05899044850624496 -5.9834597558872105e-06" rpy="0 0 0"/>
+    <mass value="1.4995207810462694"/>
+    <inertia ixx="0.001581718748535632" iyy="0.000647956977308517" izz="0.0012832122519240152" ixy="2.1684103494981795e-06" iyz="-5.978873213424545e-08" ixz="2.0408574830099724e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.295575 -0.062107 -0.298066" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/hip_joint_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.295575 -0.062107 -0.298066" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/hip_joint_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cover_top1">
+  <inertial>
+    <origin xyz="-0.1106253559684097 -0.05856709150122928 -0.002614593134298626" rpy="0 0 0"/>
+    <mass value="0.32291541653088024"/>
+    <inertia ixx="0.0009113911121371859" iyy="0.0013452110599526806" izz="0.002200715751271622" ixy="-2.8189256484623115e-17" iyz="8.491105599986015e-05" ixz="1.3877787807814457e-17"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.301195 -0.083355 -0.367565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/cover_top1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+      <color rgba="0.000 0.000 0.000 1.000"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.301195 -0.083355 -0.367565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/cover_top1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_left1">
+  <inertial>
+    <origin xyz="0.013083805530804404 0.03119603730829329 -0.05402091878040155" rpy="0 0 0"/>
+    <mass value="0.1879909585112427"/>
+    <inertia ixx="0.0005759182040061279" iyy="0.0004323985912519368" izz="0.0001693975052996996" ixy="1.9860273835804743e-06" iyz="0.00022786466612425334" ixz="-3.439152774594237e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.310575 -0.002102 -0.29806" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/upper_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_white"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.310575 -0.002102 -0.29806" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/upper_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="knee_joint_left1">
+  <inertial>
+    <origin xyz="0.01814893648442034 4.673928523379889e-08 -1.9471835588369402e-07" rpy="0 0 0"/>
+    <mass value="0.03018298947763471"/>
+    <inertia ixx="2.171738190086996e-06" iyy="1.796730299644892e-05" izz="1.7967303023250832e-05" ixy="2.1239520558991032e-16" iyz="3.219354036826383e-14" ixz="1.231653667943533e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.310575 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/knee_joint_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.310575 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/knee_joint_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_left1">
+  <inertial>
+    <origin xyz="0.012816139008833882 -0.031744957187952234 -0.05497019091429617" rpy="0 0 0"/>
+    <mass value="0.0970074976127493"/>
+    <inertia ixx="0.00021853658527461032" iyy="0.00016839469304769095" izz="6.401513201224375e-05" ixy="-7.034318965592166e-07" iyz="-9.03942929855933e-05" ixz="-1.2320017424706335e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.34245 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/lower_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_white"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.34245 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/lower_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ankle_joint_left1">
+  <inertial>
+    <origin xyz="-3.5596841041485305e-07 -2.1724708928116607e-07 -1.640176162595597e-08" rpy="0 0 0"/>
+    <mass value="0.0026576217150122566"/>
+    <inertia ixx="2.919750324592968e-08" iyy="2.8589763455830544e-07" izz="2.858976355029166e-07" ixy="4.491815719289555e-18" iyz="8.1821283651243e-16" ixz="-2.4665599424045226e-18"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.356825 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ankle_joint_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.356825 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ankle_joint_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="foot_left1">
+  <inertial>
+    <origin xyz="-3.5596841019280845e-07 -0.000663648104323972 -0.008196977236141628" rpy="0 0 0"/>
+    <mass value="0.01501724610368871"/>
+    <inertia ixx="2.498820922202856e-06" iyy="1.2393363070972892e-06" izz="2.1990401818476873e-06" ixy="1.2281977735187355e-18" iyz="-3.580602181222796e-08" ixz="4.756937031780151e-18"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.356825 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/foot_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.356825 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/foot_left1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="hip_joint_right1">
+  <inertial>
+    <origin xyz="-0.0014261218423031186 -0.058990448506239926 -5.983459770653177e-06" rpy="0 0 0"/>
+    <mass value="1.4995207810462698"/>
+    <inertia ixx="0.001581718748535632" iyy="0.000647956977308628" izz="0.0012832122519239927" ixy="-2.1684103496168454e-06" iyz="-5.978873238144354e-08" ixz="-2.04085692789846e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.085575 -0.062107 -0.298066" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/hip_joint_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.085575 -0.062107 -0.298066" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/hip_joint_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_right1">
+  <inertial>
+    <origin xyz="-0.013084517467635629 0.031196037308141078 -0.0540209187804922" rpy="0 0 0"/>
+    <mass value="0.1879909585112427"/>
+    <inertia ixx="0.0005759182040061331" iyy="0.0004323985912524017" izz="0.0001693975052992386" ixy="-1.9860273836184213e-06" iyz="0.00022786466612398186" ixz="3.439152774572553e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.070575 -0.002102 -0.29806" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/upper_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_white"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.070575 -0.002102 -0.29806" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/upper_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="knee_joint_right1">
+  <inertial>
+    <origin xyz="-0.01814964842125178 4.673878357952521e-08 -1.947186480943941e-07" rpy="0 0 0"/>
+    <mass value="0.03018298947763471"/>
+    <inertia ixx="2.1717381900872128e-06" iyy="1.7967303044429637e-05" izz="1.7967302975270007e-05" ixy="2.1255783591578314e-16" iyz="4.50345056385304e-15" ixz="1.2267747581673483e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.070575 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/knee_joint_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.070575 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/knee_joint_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_right1">
+  <inertial>
+    <origin xyz="-0.012816850945665183 -0.031722515279252794 -0.05498314494023458" rpy="0 0 0"/>
+    <mass value="0.0970074976127493"/>
+    <inertia ixx="0.00021853658527459948" iyy="0.0001684278036463865" izz="6.398202141353753e-05" ixy="7.149982213940467e-07" iyz="-9.037516826149953e-05" ixz="1.225325373095589e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0387 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/lower_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_white"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0387 -0.08024 -0.162751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/lower_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ankle_joint_right1">
+  <inertial>
+    <origin xyz="-3.559684210348302e-07 -2.1724708332195725e-07 -1.6401761129825054e-08" rpy="0 0 0"/>
+    <mass value="0.0026576217150122566"/>
+    <inertia ixx="2.919750324432413e-08" iyy="2.858976345566533e-07" izz="2.858976355027444e-07" ixy="4.9544809969476146e-18" iyz="8.18977548445123e-16" ixz="-2.8199844396463794e-18"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.024325 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ankle_joint_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.024325 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ankle_joint_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="foot_right1">
+  <inertial>
+    <origin xyz="-3.559684208613578e-07 -0.0006636481043179301 -0.008196977236141132" rpy="0 0 0"/>
+    <mass value="0.01501724610368871"/>
+    <inertia ixx="2.4988209221740593e-06" iyy="1.2393363071005113e-06" izz="2.199040181847662e-06" ixy="6.45862622281404e-21" iyz="-3.5806021812692716e-08" ixz="1.6940658945086007e-21"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.024325 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/foot_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_blue"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.024325 -0.002128 -0.027427" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/foot_right1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="hip_joint_rev_left" type="continuous">
+  <origin xyz="0.295575 0.062107 0.298066" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="hip_joint_left1"/>
+  <axis xyz="-0.0 1.0 9.4e-05"/>
+</joint>
+<transmission name="hip_joint_rev_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="hip_joint_rev_left">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="hip_joint_rev_left_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="cover_joint_rigid" type="fixed">
+  <origin xyz="0.301195 0.083355 0.367565" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cover_top1"/>
+</joint>
+
+<joint name="leg_joint_rev_left" type="continuous">
+  <origin xyz="0.015 -0.060005 -6e-06" rpy="0 0 0"/>
+  <parent link="hip_joint_left1"/>
+  <child link="upper_left1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+<transmission name="leg_joint_rev_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="leg_joint_rev_left">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="leg_joint_rev_left_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="knee_joint_rev_left" type="continuous">
+  <origin xyz="0.0 0.078138 -0.135309" rpy="0 0 0"/>
+  <parent link="upper_left1"/>
+  <child link="knee_joint_left1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+<transmission name="knee_joint_rev_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="knee_joint_rev_left">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="knee_joint_rev_left_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="knee_joint_rigid_left" type="fixed">
+  <origin xyz="0.031875 0.0 0.0" rpy="0 0 0"/>
+  <parent link="knee_joint_left1"/>
+  <child link="lower_left1"/>
+</joint>
+
+<joint name="ankle_joint_rigid_left" type="fixed">
+  <origin xyz="0.014375 -0.078112 -0.135324" rpy="0 0 0"/>
+  <parent link="lower_left1"/>
+  <child link="ankle_joint_left1"/>
+</joint>
+
+<joint name="foot_joint_rigid_left" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="ankle_joint_left1"/>
+  <child link="foot_left1"/>
+</joint>
+
+<joint name="hip_joint_rev_right" type="continuous">
+  <origin xyz="0.085575 0.062107 0.298066" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="hip_joint_right1"/>
+  <axis xyz="0.0 -1.0 -9.4e-05"/>
+</joint>
+<transmission name="hip_joint_rev_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="hip_joint_rev_right">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="hip_joint_rev_right_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="leg_joint_rev_right" type="continuous">
+  <origin xyz="-0.015 -0.060005 -6e-06" rpy="0 0 0"/>
+  <parent link="hip_joint_right1"/>
+  <child link="upper_right1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+<transmission name="leg_joint_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="leg_joint_right">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="leg_joint_right_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="knee_joint_rev_right" type="continuous">
+  <origin xyz="0.0 0.078138 -0.135309" rpy="0 0 0"/>
+  <parent link="upper_right1"/>
+  <child link="knee_joint_right1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+<transmission name="knee_joint_rev_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="knee_joint_rev_right">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="knee_joint_rev_right_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="knee_joint_rigid_right" type="fixed">
+  <origin xyz="-0.031875 0.0 0.0" rpy="0 0 0"/>
+  <parent link="knee_joint_right1"/>
+  <child link="lower_right1"/>
+</joint>
+
+<joint name="ankle_joint_rigid_right" type="fixed">
+  <origin xyz="-0.014375 -0.078112 -0.135324" rpy="0 0 0"/>
+  <parent link="lower_right1"/>
+  <child link="ankle_joint_right1"/>
+</joint>
+
+<joint name="foot_joint_rigid_right" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="ankle_joint_right1"/>
+  <child link="foot_right1"/>
+</joint>
+
+</robot>
